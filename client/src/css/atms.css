@@ -1,0 +1,10 @@
+.atms__heading {
+  margin-bottom: 56px;
+}
+
+.atms__map {
+  margin: 0 auto;
+  height: 728px;
+  width: 95%;
+  border-radius: 7px;
+}

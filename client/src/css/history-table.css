@@ -1,0 +1,80 @@
+.account-history__container {
+  padding: 25px 50px 66px 50px;
+  background-color: var(--color-gray-7);
+  border-radius: 56px;
+}
+
+.account-history__container:hover {
+  cursor: pointer;
+}
+
+.account-history__heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.account-history__table {
+  width: 100%;
+  max-width: 1230px;
+}
+
+.history-table__head {
+  display: block;
+  padding: 20px;
+  padding-left: 50px;
+  background-color: var(--color-primary);
+  border-radius: 15px;
+
+}
+
+.history-table__head th {
+  margin-right: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.table-head__from {
+  padding-right: 125px;
+}
+
+.table-head__to {
+  padding-right: 105px;
+}
+
+.table-head__amount {
+  padding-right: 109px;
+}
+
+.body-row__from {
+  width: calc(24% - 6px);
+}
+
+.body-row__to {
+  width: calc(24% - 7px);
+}
+
+.body-row__amount {
+  width: calc(16% - 2px);
+}
+
+.history-table__body-row {
+  display: flex;
+  padding: 21px 21px 26px 50px;
+  border-bottom: 2px solid rgba(0, 82, 255, 0.1);
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.history-table__cell--negative {
+  color: var(--color-secondary-4);
+}
+
+.history-table__cell--positive {
+  color: var(--color-state-success);
+}

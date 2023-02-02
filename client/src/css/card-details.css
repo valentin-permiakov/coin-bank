@@ -1,0 +1,196 @@
+.card-details__top-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.card-details__account-num {
+  color: var(--color-secondary-1);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.card-details__back-link {
+  display: block;
+  position: relative;
+  padding: 16px 24px;
+  padding-left: 67px;
+  margin-bottom: 33px;
+  border-radius: 7px;
+  background-color: var(--color-primary);
+  background-image: url(../assets/img/arrow-back.svg);
+  background-repeat: no-repeat;
+  background-position: left 25px top 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  transition: background-color .3s ease-in-out;
+}
+
+.card-details__back-link:hover {
+  background-color: var(--color-primary-hover);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.card-details__back-link:active {
+  background-color: var(--color-primary-active);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.card-details__back-link:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+.card-details__balance-name {
+  margin-right: 50px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.card-details__balance-amount {
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+
+.card-details__middle-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.card-details__money-transfer-container {
+  padding: 25px 50px;
+  background-color: var(--color-gray-7);
+  border-radius: 50px;
+  position: relative;
+}
+
+.money-transfer__heading {
+  margin-top: 0;
+  margin-bottom: 45px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.money-transfer__input-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 506px;
+  margin-bottom: 25px;
+}
+
+.money-transfer__input-label {
+  margin-right: 18px;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+
+.money-transfer__input {
+  width: 300px;
+  padding: 10px;
+  padding-left: 16px;
+  border: 1px solid var(--color-gray-5);
+  border-radius: 7px;
+  background-color: #fff;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__input::placeholder {
+  color: var(--color-gray-4);
+  transition: color .3s ease-in-out;
+}
+
+.money-transfer__input:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.05);
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__input:hover .money-transfer__input::placeholder {
+  color: var(--color-gray-5);
+  transition: color .3s ease-in-out;
+}
+
+.money-transfer__input:focus {
+  outline: 1px solid var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.1);
+}
+
+.money-transfer__input--invalid {
+  border-color: var(--color-state-error);
+}
+
+.money-transfer__send-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 24px;
+  padding-left: 44px;
+  width: 140px;
+  border-radius: 7px;
+  background-image: url(../assets/img/money-tranfer.svg);
+  background-repeat: no-repeat;
+  background-position: left 25px top 15px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__send-btn:hover {
+  background-color: var(--color-primary-hover);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__send-btn:active {
+  background-color: var(--color-primary-active);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__send-btn:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+.money-transfer__send-btn:disabled {
+  cursor: default;
+  background-color: var(--color-gray-5);
+  transition: background-color .3s ease-in-out;
+}
+
+.money-transfer__error-message {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 400px;
+  color: var(--color-state-error);
+  font-size: 14px;
+  font-weight: 400;
+}

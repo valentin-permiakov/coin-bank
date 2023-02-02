@@ -1,0 +1,307 @@
+.exchange-section__heading {
+  margin-bottom: 56px;
+}
+
+.exchange-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.exchange-section__left {
+  flex: 1 1 26%;
+  margin-right: 50px;
+}
+
+.exchange-section__currencies-container {
+  padding: 50px;
+  padding-bottom: 55px;
+  margin-bottom: 44px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.currencies__heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.currencies__currency-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currencies__currency-name {
+  position: relative;
+  margin-bottom: 25px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.currencies__currency-name::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 90px;
+  border-bottom: 1px dashed var(--color-secondary-1);
+  width: 277px;
+}
+
+.currencies__currency-amount {
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.exchange-section__exchange-container {
+  position: relative;
+  padding: 50px;
+  padding-bottom: 60px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.exchange-section__error-message {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 400px;
+  color: var(--color-state-error);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.exchange__exchange-form {
+  display: flex;
+}
+
+.exchange-form__left {
+  margin-right: 5px;
+}
+
+.exchange-form__currency-row {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.currency-row__span {
+  margin-right: 20px;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.currency-row__currency-type {
+  position: relative;
+}
+
+.currency-type__btn {
+  position: relative;
+  margin-right: 20px;
+  width: 134px;
+  padding: 10px 15px;
+  z-index: 1;
+  border: 1px solid var(--color-gray-5);
+  border-radius: 7px;
+  text-align: start;
+  color: var(--color-gray-2);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color .3s ease-in-out;
+}
+
+.currency-type__btn:hover {
+  background-color: rgba(160, 195, 255, 0.1);
+  border-color: var(--color-primary);
+  transition: background-color .3s ease-in-out;
+}
+
+.currency-type__btn:focus {
+  background-color: rgba(160, 195, 255, 0.1);
+  outline-color: var(--color-primary);
+  transition: background-color .3s ease-in-out;
+}
+
+.currency-type__btn::before {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  width: 24px;
+  height: 21px;
+  background-image: url(../assets/img/sort-down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: transform .3s ease-in-out;
+}
+
+.currency__list--active.currency-type__btn::before {
+  transform: rotate(-180deg);
+  transition: transform .3s ease-in-out;
+}
+
+.currency__list {
+  position: absolute;
+  z-index: 2;
+  width: 134px;
+  top: -682px;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+
+}
+
+.currency__list.currency__list--active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.currency-list__item {
+  cursor: pointer;
+  padding: 10px 16px;
+  color: var(--color-gray-2);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color .3s ease-in-out;
+}
+
+.currency-list__item:hover {
+  background-color: var(--color-state-info);
+  transition: background-color .3s ease-in-out;
+}
+
+.exchange-form__submit-btn {
+  padding: 47px 16px;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background-color .3s ease-in-out;
+}
+
+.exchange-form__submit-btn:disabled {
+  cursor: default;
+  background-color: var(--color-gray-5);
+  transition: background-color .3s ease-in-out;
+}
+
+.amount-row__label {
+  margin-right: 8px;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.amount-row__input {
+  padding: 10px 16px;
+  width: 300px;
+  border: 1px solid var(--color-gray-5);
+  border-radius: 7px;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color .3s ease-in-out;
+}
+
+.amount-row__input::placeholder {
+  color: var(--color-gray-4);
+  transition: color .3s ease-in-out;
+}
+
+.amount-row__input:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.05);
+  transition: background-color .3s ease-in-out;
+}
+
+.amount-row__input:hover .amount-row__input::placeholder {
+  color: var(--color-gray-5);
+  transition: color .3s ease-in-out;
+}
+
+.amount-row__input:focus {
+  outline: 1px solid var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.1);
+}
+
+.amount-row__input--invalid {
+  border-color: var(--color-state-error);
+}
+
+.exchange-section__rates-container {
+  flex: 1 1 35%;
+  padding: 50px;
+  padding-bottom: 80px;
+  background-color: var(--color-gray-3);
+  border-radius: 50px;
+}
+
+.rates__change-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exchange-rates__currency-name {
+  position: relative;
+  margin-bottom: 25px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.exchange-rates__currency-rate {
+  padding-right: 30px;
+  color: var(--color-secondary-1);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.exchange-rates__currency-name::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 110px;
+  border-bottom: 1px dashed var(--color-secondary-1);
+  width: 400px;
+}
+
+.rates__change-container--positive .exchange-rates__currency-name::after {
+  border-color: var(--color-state-success);
+}
+
+.rates__change-container--positive .exchange-rates__currency-rate {
+  background: url(../assets/img/arrow-increase.svg) no-repeat;
+  background-position: top 7px right;
+}
+
+.rates__change-container--negative .exchange-rates__currency-name::after {
+  border-color: var(--color-secondary-4);
+}
+
+.rates__change-container--negative .exchange-rates__currency-rate {
+  background: url(../assets/img/arrow-decrease.svg) no-repeat;
+  background-position: top 7px right;
+}

@@ -1,0 +1,113 @@
+.login-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 80px;
+  border-radius: 50px;
+  background-color: var(--color-gray-7);
+}
+
+.login-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.login-form__input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.login-form__input-container:first-child {
+  margin-bottom: 25px;
+}
+
+.login-form__input {
+  width: 300px;
+  padding: 10px;
+  padding-left: 16px;
+  border: 1px solid var(--color-gray-5);
+  border-radius: 7px;
+  background-color: #fff;
+  color: var(--color-secondary-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color .3s ease-in-out;
+}
+
+.login-form__input::placeholder {
+  color: var(--color-gray-4);
+  transition: color .3s ease-in-out;
+}
+
+.login-form__input:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.05);
+  transition: background-color .3s ease-in-out;
+}
+
+.login-form__input:hover .login-form__input::placeholder {
+  color: var(--color-gray-5);
+  transition: color .3s ease-in-out;
+}
+
+.login-form__input:focus {
+  outline: 1px solid var(--color-primary);
+  background-color: rgba(160, 195, 255, 0.1);
+}
+
+.login-form__input--invalid {
+  border-color: var(--color-state-error);
+}
+
+.login-form__submit-btn {
+  padding: 14px 21px;
+  width: 83px;
+  border-radius: 7px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background-color .3s ease-in-out;
+}
+
+.login-form__submit-btn:hover {
+  background-color: var(--color-primary-hover);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.login-form__submit-btn:active {
+  background-color: var(--color-primary-active);
+  border-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.login-form__submit-btn:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+
+.login-form__error-message {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  text-align: center;
+  color: var(--color-state-error);
+  font-size: 14px;
+  font-weight: 400;
+}

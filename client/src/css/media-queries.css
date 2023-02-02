@@ -1,0 +1,573 @@
+@media (max-width: 1355px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .section-header {
+    font-size: 28px;
+  }
+
+  .skeleton__span--text {
+    width: 300px;
+  }
+
+  /* Accounts Page */
+  .cards-section__cards-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Account Details */
+  .card-details__top-container {
+    margin-bottom: 30px;
+  }
+
+  .card-details__account-num {
+    font-size: 28px;
+  }
+
+  .money-transfer__heading {
+    margin-bottom: 25px;
+  }
+
+  .card-details__money-transfer-container {
+    padding: 25px 40px;
+    padding-bottom: 40px;
+    max-width: 500px;
+    border-radius: 40px;
+  }
+
+  .details__bar-chart-container {
+    padding: 25px 40px;
+    max-width: 450px;
+  }
+
+  .money-transfer__input-label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .money-transfer__error-message {
+    bottom: 15px;
+  }
+
+  /* Account History */
+  .account-history__container {
+    padding: 40px 30px;
+    border-radius: 40px;
+  }
+
+  .history-table__head th {
+    font-size: 16px;
+  }
+
+  .table-head__from {
+    padding-right: 122px;
+  }
+
+  .table-head__to {
+    padding-right: 106px;
+  }
+
+  .table-head__amount {
+    padding-right: 110px;
+  }
+
+
+  .history-table__body-row {
+    font-size: 14px;
+  }
+
+  .body-row__from {
+    width: calc(28% - 5px);
+  }
+
+  .body-row__to {
+    width: calc(28% - 3px);
+  }
+
+  .body-row__amount {
+    width: calc(20% - 4px);
+  }
+
+  .bar-chart-container {
+    border-radius: 40px;
+  }
+
+  /* Exchange Section */
+
+  .exchange-section__heading {
+    margin-bottom: 30px;
+  }
+
+  .currencies__heading {
+    font-size: 18px;
+  }
+
+  .currencies__currency-name,
+  .currencies__currency-amount,
+  .exchange-rates__currency-name,
+  .exchange-rates__currency-rate {
+    font-size: 16px;
+  }
+
+  .currencies__currency-name::after {
+    left: 64px;
+    width: 230px;
+  }
+
+  .exchange-rates__currency-name::after {
+    width: 180px;
+    left: 90px;
+  }
+
+  .currency-row__span {
+    margin-right: 10px;
+  }
+
+  .currency-type__btn {
+    margin-right: 10px;
+    width: 100px;
+  }
+
+  .currency__list {
+    width: 100px;
+  }
+
+  .amount-row__input {
+    max-width: 200px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .section-header {
+    margin-bottom: 25px;
+  }
+
+  .skeleton__div,
+  .skeleton__div--big {
+    margin: 0 auto;
+    margin-bottom: 20px !important;
+    width: 98%;
+  }
+
+  /* Accounts Page */
+  .sort__button,
+  .sort__list {
+    width: 200px;
+  }
+
+  .cards-top__new-acc-btn {
+    padding: 16px 20px;
+    padding-left: 50px;
+    background-position: left 20px top 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .cards-section__cards-list {
+    gap: 40px 50px;
+}
+
+  .cards-list__card-item,
+  .skeleton-list__card-item {
+    max-width: 350px;
+  }
+
+  /* Account Details */
+  .card-details__top-container {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 97%;
+  }
+
+  .card-details__back-link {
+    margin-bottom: 25px;
+  }
+
+  .card-details__account-num {
+    font-size: 24px;
+  }
+
+  .card-details__middle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-details__money-transfer-container {
+    margin-bottom: 30px;
+  }
+
+  .details__bar-chart-container {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* Account History */
+  .history-table__wrapper {
+    overflow: auto;
+  }
+
+  .account-history__container {
+    min-width: 710px;
+  }
+
+  .history-table__head {
+    padding: 20px 15px;
+  }
+
+  .history-table__head th {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .table-head__from {
+    padding-right: 118px;
+  }
+
+  .history-table__body-row {
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+
+  .body-row__from {
+    width: calc(33% - 4px);
+  }
+
+  .body-row__to {
+    width: calc(33% - 5px);
+  }
+
+  .body-row__amount {
+    width: calc(25% - 6px);
+  }
+
+  /* Exchange Section */
+  .exchange-section__container {
+    max-width: 98%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .exchange-section__left {
+    margin-right: 0;
+  }
+
+  .exchange-section__currencies-container {
+    padding-top: 60px;
+    column-count: 2;
+    position: relative;
+  }
+
+  .currencies__heading {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+
+  .currencies__currency-name::after {
+    left: 56px;
+    width: 184px;
+  }
+
+  .exchange-section__exchange-container {
+    padding: 40px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    max-width: 460px;
+  }
+
+  .exchange-section__rates-container {
+    position: relative;
+    padding-top: 60px;
+    column-count: 2;
+  }
+
+  .exchange-rates__currency-name::after {
+    width: 170px;
+    left: 80px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .section-header {
+    margin-bottom: 15px;
+  }
+
+  /* Login */
+  .login-container {
+    position: inherit;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    border-radius: 40px;
+    transform: translate(0, 0);
+  }
+
+  .login-header {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .login-form__input-container {
+    margin-bottom: 15px !important;
+  }
+
+  .login-form__input {
+    width: 150px;
+  }
+
+  /* Header */
+  .header__logo {
+    font-size: 30px;
+  }
+
+  .nav-list__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .nav-item__link {
+    padding: 12px 10px;
+    border: 1px solid var(--color-primary);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* Cards Section */
+  .cards-section__top {
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .cards-skeleton__top {
+    align-items: flex-start;
+  }
+
+  .cards-top__left {
+    flex-direction: column;
+  }
+
+  .cards-top__new-acc-btn {
+    background-position: left 20px top 14px;
+  }
+
+  .cards-section__cards-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+  .cards-list__card-item,
+  .skeleton-list__card-item {
+    flex: 1 1 100%;
+    max-width: 99%;
+  }
+
+  .card-item__bottom {
+    justify-content: space-between;
+  }
+
+  /* Account Details */
+  .card-details__top-container {
+    flex-direction: column;
+  }
+
+  .card-details__top-left {
+    margin-bottom: 10px;
+  }
+
+  .card-details__top-right {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .card-details__balance-name {
+    order: 3;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .card-details__balance-amount {
+    margin-bottom: 10px;
+  }
+
+  /* History Table */
+  .table-head__from {
+    padding-right: 99px;
+  }
+
+  .table-head__to {
+    padding-right: 87px;
+  }
+
+  .table-head__amount {
+    padding-right: 96px;
+  }
+
+  /* Exchange Section */
+  .exchange-section__currencies-container {
+    column-count: 1;
+  }
+
+  .currencies__heading {
+    position: initial;
+  }
+
+  .currencies__currency-name::after {
+    left: 92px;
+    width: 199px;
+  }
+
+  .exchange-section__rates-container {
+    column-count: 1;
+  }
+
+  .exchange-rates__currency-name::after {
+    left: 92px;
+    width: 199px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 360px;
+  }
+
+  .skeleton__span--text {
+    width: 150px;
+  }
+
+  /* Header */
+  .header {
+    position: relative;
+    min-height: 65px;
+  }
+
+  .header__nav--active {
+    position: absolute;
+    top: -150px;
+    left: 0;
+  }
+
+  .header__nav--visible {
+    top: 0;
+  }
+
+
+  .header__nav-list {
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--color-primary);
+  }
+
+  .nav-list__item {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .nav-item__link {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+  }
+
+  .header__burger-container {
+    display: block;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    transition: opacity, .2s ease-in-out;
+  }
+
+  /* Accounts Page */
+  .cards-section__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .cards-top__left {
+    margin-bottom: 10px;
+  }
+
+  /* Account Details */
+  .card-details__middle-container {
+    overflow-x: auto;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .card-details__money-transfer-container {
+    max-width: 360px;
+  }
+
+  .money-transfer__input-container {
+    flex-direction: column;
+  }
+
+  .money-transfer__input-label {
+    margin-bottom: 5px;
+  }
+
+  .cardicon {
+    top: calc(50% - 7px);
+  }
+
+  /* Account History */
+  .card-history__middle-container {
+    overflow-x: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .bar-chart-container {
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 500px;
+  }
+
+  /* Exchange Section */
+  .currencies__currency-name::after {
+    left: 48px;
+    width: 130px;
+  }
+
+  .exchange-rates__currency-name::after {
+    left: 80px;
+    width: 80px;
+  }
+
+  .exchange__exchange-form {
+    flex-direction: column;
+  }
+
+  .exchange-form__left {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .exchange-form__submit-btn {
+    padding: 15px;
+  }
+
+  .exchange-section__error-message {
+    bottom: 14px;
+  }
+}

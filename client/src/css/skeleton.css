@@ -1,0 +1,63 @@
+@keyframes shine {
+  to {
+    background-position: 130% 0,
+      /* move highlight to right */
+      0 0;
+  }
+}
+
+.skeleton-bg {
+  background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  animation: shine 1.5s infinite;
+}
+
+.skeleton__div {
+  padding: 27px 22px;
+  margin-bottom: 50px;
+  width: 45%;
+  height: 250px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.skeleton__div--big {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 400px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.skeleton__div--extra-big {
+  height: 700px;
+}
+
+.skeleton__span--text {
+  margin-bottom: 20px;
+  display: block;
+  margin-right: 20px;
+  height: 20px;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.skeleton__span--btn {
+  display: block;
+  height: 50px;
+  width: 150px;
+  border-radius: 7px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.skeleton-list__card-item {
+  padding: 27px 22px;
+  max-width: 400px;
+  height: 150px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+

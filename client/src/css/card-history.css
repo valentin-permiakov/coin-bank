@@ -1,0 +1,16 @@
+.card-history__middle-container {
+  margin-bottom: 50px;
+}
+
+#history-balance-dynamic:hover,
+#history-transaction-ratio:hover {
+  cursor: default;
+}
+
+.card-history__bar-chart:first-child {
+  margin-bottom: 50px;
+}
+
+#account-history-table:hover {
+  cursor: default;
+}

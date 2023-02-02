@@ -1,0 +1,163 @@
+/* VARS */
+:root {
+  --color-primary: #116acc;
+  --color-primary-hover: #5897db;
+  --color-primary-active: #0c4a8f;
+  --color-secondary-1: #182233;
+  --color-secondary-4: #fd4e5d;
+  --color-gray-2: #374151;
+  --color-gray-3: #e5e5e5;
+  --color-gray-4: #6b7280;
+  --color-gray-5: #9ca3af;
+  --color-gray-7: #f3f4f6;
+  --color-state-info: #a0c3ff;
+  --color-state-success: #76ca66;
+  --color-state-error: #ba0000;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('UbuntuLight'), local('Ubuntu-Light'),
+  url('../assets/fonts/Ubuntu-Light.woff2') format('woff2'),
+  url('../assets/fonts/Ubuntu-Light.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('UbuntuRegular'), local('Ubuntu-Regular'),
+  url('../assets/fonts/Ubuntu-Regular.woff2') format('woff2'),
+  url('../assets/fonts/Ubuntu-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('UbuntuMedium'), local('Ubuntu-Medium'),
+  url('../assets/fonts/Ubuntu-Medium.woff2') format('woff2'),
+  url('../assets/fonts/Ubuntu-Medium.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('UbuntuBold'), local('Ubuntu-Bold'),
+  url('../assets/fonts/Ubuntu-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Ubuntu-Bold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+/* Common Specification */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 31px;
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--color-secondary-1);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.error-message {
+  color: var(--color-state-error)
+}
+
+.cardicon {
+  height: 38px;
+  position: absolute;
+  right: 6px;
+  top: calc(50% - 20px);
+  width: 60px;
+}
+
+.transfer-success {
+  color: var(--color-state-success) !important;
+}
+
+.button--loading {
+  color: transparent !important;
+  background-image: none !important;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s linear infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+[draggable] {
+  user-select: none;
+}
